@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        nav img {
+            height: 40px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ddd;
+            border-bottom: 2px solid white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .intro, .projects, .skills, .contact {
+            margin: 40px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .intro h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .projects h2, .skills h2, .contact h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .projects .project-item, .skills .skill-item {
+            margin-bottom: 20px;
+        }
+        .projects .project-item h3, .skills .skill-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .projects .project-item p, .skills .skill-item p {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact form button {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="image">
+        <a href="#intro">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="intro" class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm SAM CHAUDHARY, a passionate developer with experience in building web applications. I love creating beautiful and functional websites.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Project One</h3>
+                <p>This project involves an basic alarm clock using PYTHON.</p>
+                <a href="https://github.com/SamChaudhary1234/Projects-python-/blob/main/alarm_clock-python.txt">GITHUB</a>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3>HTML & CSS</h3>
+                <p>Experienced in building responsive designs.</p>
+            </div>
+            <div class="skill-item">
+                <h3>PYTHON</h3>
+                <p>Skilled in python3, including frameworks like Django.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
